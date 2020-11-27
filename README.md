@@ -28,7 +28,7 @@ Helix Core is a proprietary software and is subject to the terms and conditions 
 ## Deployment
 1. Sign in to the AWS console and click on Launch Stack below. This launches a CloudFormation stack in your AWS account. By default, the stack is launched in the us-west-2 (Oregon) region. If you want to launch it in a different region, change the region from the pull-down menu in the upper right corner of the management console.
 
-[![Launch Stack](/images/launchstack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/template?stackName=AWSPerforceTest&templateURL=https://gametech-cfn-templates-public.s3.amazonaws.com/aws-perforce/templates/PerforceTemplateMain.yaml) 
+[![Launch Stack](/images/launchstack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/template?stackName=AWSPerforceTest&templateURL=https://raw.githubusercontent.com/rcowham/aws-perforce/master/templates/PerforceServerSetupTemplate.yaml)
 
 2. On the **Specify template** page, keep the default setting for the template URL, and then choose Next.
 

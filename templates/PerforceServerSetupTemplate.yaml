@@ -32,7 +32,7 @@ Parameters:
   LatestAmiId:
     Type: "String"
   PerforceAZ:
-    Type: "String"
+    Type: AWS::EC2::AvailabilityZone::Name
   ServerName:
     Type: "String"
   ServerDescription:
@@ -40,11 +40,11 @@ Parameters:
   ServerID:
     Type: "String"
   SubnetId:
-    Type: "String"
+    Type: AWS::EC2::Subnet::Id
   PrivateIpAddress:
     Type: "String"
   PerforceSecurityGroup:
-    Type: "String"
+    Type: AWS::EC2::SecurityGroup::Id
   gw1:
     Type: "String"
   DepotVolumeType:
@@ -79,7 +79,7 @@ Parameters:
     Description: "Set the provisioned IOPs between 100 and 64000. Only set if you are choosing io1 for your metadata volume type."
   EC2Profile:
     Type: "String"
-    Description: "EC2 proifile setting for IAM role"
+    Description: "EC2 profile setting for IAM role"
 
 Resources:
   PerforceEIP:
